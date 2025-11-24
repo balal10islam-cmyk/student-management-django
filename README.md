@@ -87,7 +87,7 @@ Images are from [Unsplash](https://unsplash.com)
 
 প্রথমে, গিটহাব থেকে প্রোজেক্ট ক্লোন করতে হবে। যেভাবে ক্লোন করতে হবে:
 
-git clone https://github.com/username/your-repository-name.git
+git clone https://github.com/balal10islam-cmyk/student-management-django.git
 
 
 এখানে https://github.com/username/your-repository-name.git এর জায়গায় তোমার গিটহাব রিপোজিটরির লিঙ্ক ব্যবহার করবে।
@@ -96,10 +96,11 @@ git clone https://github.com/username/your-repository-name.git
 
 ডাউনলোড করার পর, প্রোজেক্ট ফোল্ডারে গিয়ে ভার্চুয়াল এনভায়রনমেন্ট তৈরি করতে হবে:
 
-cd cd student-management-using-django
-python -m venv venv
+cd student-management-using-django
+
 
 3. ভার্চুয়াল এনভায়রনমেন্ট একটিভেট করা
+4. python -m venv venv
 
 এবার ভার্চুয়াল এনভায়রনমেন্টটিকে একটিভেট করতে হবে। উইন্ডোজে:
 
