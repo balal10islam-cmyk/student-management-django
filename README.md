@@ -82,6 +82,61 @@ Images are from [Unsplash](https://unsplash.com)
 
 *Alternative to Pip is Homebrew*
 
+
+1. গিট রিপোজিটরি ক্লোন করা
+
+প্রথমে, গিটহাব থেকে প্রোজেক্ট ক্লোন করতে হবে। যেভাবে ক্লোন করতে হবে:
+
+git clone https://github.com/username/your-repository-name.git
+
+
+এখানে https://github.com/username/your-repository-name.git এর জায়গায় তোমার গিটহাব রিপোজিটরির লিঙ্ক ব্যবহার করবে।
+
+2. ভার্চুয়াল এনভায়রনমেন্ট সেটআপ করা
+
+ডাউনলোড করার পর, প্রোজেক্ট ফোল্ডারে গিয়ে ভার্চুয়াল এনভায়রনমেন্ট তৈরি করতে হবে:
+
+cd cd student-management-using-django
+python -m venv venv
+
+3. ভার্চুয়াল এনভায়রনমেন্ট একটিভেট করা
+
+এবার ভার্চুয়াল এনভায়রনমেন্টটিকে একটিভেট করতে হবে। উইন্ডোজে:
+
+venv\Scripts\activate
+
+
+লিনাক্স বা ম্যাকOS এ:
+
+source venv/bin/activate
+
+4. প্রোজেক্টের ডিপেনডেন্সি ইনস্টল করা
+
+প্রোজেক্টের জন্য দরকারি প্যাকেজগুলো ইনস্টল করতে হবে requirements.txt ফাইল থেকে:
+
+pip install -r requirements.txt
+
+5. ডাটাবেস মাইগ্রেশন করা
+
+এখন ডাটাবেস মাইগ্রেট করতে হবে:
+
+python manage.py migrate
+
+6. সুপারইউজার তৈরি করা (যদি দরকার হয়)
+
+অথবা যদি অ্যাডমিন প্যানেল ব্যবহার করতে চান, তাহলে সুপারইউজার তৈরি করতে হবে:
+
+python manage.py createsuperuser
+
+7. সার্ভার চালানো
+
+সব কিছু ঠিকভাবে সেটআপ হয়ে গেলে, এখন প্রোজেক্টটি রান করতে হবে:
+
+python manage.py runserver
+
+
+এটা চালানোর পর, আপনি ওয়েব ব্রাউজারে গিয়ে http://127.0.0.1:8000/ এ গিয়ে প্রোজেক্টটি দেখতে পারবেন।
+
 ### Installation
 **1. Create a Folder where you want to save the project**
 
