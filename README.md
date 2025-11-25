@@ -117,8 +117,8 @@ pip install -r requirements.txt
 
 আপনার ভার্চুয়াল এনভায়রনমেন্টে এই প্যাকেজগুলো পুনরায় ইনস্টল করতে হবে:
 
-pip uninstall requests urllib3
-pip install requests urllib3
+$ pip uninstall requests urllib3
+$ pip install requests urllib3
 
 এটি requests এবং urllib3 উভয় প্যাকেজকে সঠিকভাবে ইনস্টল করবে।
 
@@ -126,7 +126,7 @@ pip install requests urllib3
 
 যদি six প্যাকেজ ইনস্টল না থাকে, তবে এটি ইনস্টল করতে হবে:
 
-pip install six
+$ pip install six
 
 
 six প্যাকেজটি Python 2 এবং 3 এর মধ্যে সঙ্গতিপূর্ণ কোড লেখার জন্য ব্যবহৃত হয়, এবং এটি urllib3 এর অংশ হিসাবে ব্যবহৃত হয়।
