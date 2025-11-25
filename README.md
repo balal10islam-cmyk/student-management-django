@@ -117,33 +117,35 @@ pip install -r requirements.txt
 
 আপনার ভার্চুয়াল এনভায়রনমেন্টে এই প্যাকেজগুলো পুনরায় ইনস্টল করতে হবে:
 
-$ pip uninstall requests urllib3
-$ pip install requests urllib3
+ pip uninstall requests urllib3
+
+6. আপনার ভার্চুয়াল এনভায়রনমেন্টে এই প্যাকেজগুলো পুনরায় ইনস্টল করতে হবে:
+pip install requests urllib3
 
 এটি requests এবং urllib3 উভয় প্যাকেজকে সঠিকভাবে ইনস্টল করবে।
 
-6. six প্যাকেজ ইনস্টল করুন:
+7. six প্যাকেজ ইনস্টল করুন:
 
 যদি six প্যাকেজ ইনস্টল না থাকে, তবে এটি ইনস্টল করতে হবে:
 
-$ pip install six
+ pip install six
 
 
 six প্যাকেজটি Python 2 এবং 3 এর মধ্যে সঙ্গতিপূর্ণ কোড লেখার জন্য ব্যবহৃত হয়, এবং এটি urllib3 এর অংশ হিসাবে ব্যবহৃত হয়।
 
-7. ডাটাবেস মাইগ্রেশন করা
+8. ডাটাবেস মাইগ্রেশন করা
 
 এখন ডাটাবেস মাইগ্রেট করতে হবে:
 
 python manage.py migrate
 
-8. সুপারইউজার তৈরি করা (যদি দরকার হয়)
+9. সুপারইউজার তৈরি করা (যদি দরকার হয়)
 
 অথবা যদি অ্যাডমিন প্যানেল ব্যবহার করতে চান, তাহলে সুপারইউজার তৈরি করতে হবে:
 
 python manage.py createsuperuser
 
-9. সার্ভার চালানো
+10. সার্ভার চালানো
 
 সব কিছু ঠিকভাবে সেটআপ হয়ে গেলে, এখন প্রোজেক্টটি রান করতে হবে:
 
@@ -274,12 +276,6 @@ Password: student
 
 
 
-## For Sponsor or Projects Enquiry
-1. Email - jobowonubi@gmail.com
-2. LinkedIn - [jobic10](https://www.linkedin.com/in/jobic10 "Owonubi Job Sunday on LinkedIn")
-2. Twitter - [jobic10](https://www.twitter.com/jobic10 "Owonubi Job Sunday on Twitter")
-
-
 
 ## Project's Journey
 - [x] Admin/Staff/Student Login
@@ -317,25 +313,3 @@ Password: student
 - [x] Student View Result
 - [x] Change all links to be dynamic
 - [x] Code Restructure - Very Important
-
-
-## Questions I asked While Developing This
-- https://stackoverflow.com/questions/63829896/is-there-a-specific-way-of-adding-apps-in-django/
-
-
-## Helpful Links
-- https://stackoverflow.com/questions/55969952/how-can-i-avoid-a-user-from-registering-an-already-used-email-in-django
-- https://stackoverflow.com/questions/7562573/how-do-i-get-django-forms-to-show-the-html-required-attribute
-- https://stackoverflow.com/questions/40910149/django-exists-versus-doesnotexist
-- https://www.edureka.co/community/80982/how-can-i-have-multiple-models-in-a-single-django-modelform
-- https://stackoverflow.com/questions/12848605/django-modelform-what-is-savecommit-false-used-for
-- https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html
-- https://stackoverflow.com/questions/32576348/how-can-i-create-django-modelform-for-an-abstract-model
-- https://www.fomfus.com/articles/how-to-use-email-as-username-for-django-authentication-removing-the-username
-- https://stackoverflow.com/questions/64145745/create-user-missing-1-required-positional-argument-username?noredirect=1#64145844
-- https://stackoverflow.com/questions/36059194/what-is-the-difference-between-json-dump-and-json-dumps-in-python
-- https://stackoverflow.com/questions/64188313/django-can-i-delete-apps-static-files-after-running-collectstatic/64189244#64189244
-- https://stackoverflow.com/questions/29416478/change-form-field-value-before-saving
-- https://support.google.com/mail/thread/38519529?hl=en
-- https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
-- https://stackoverflow.com/questions/3429084/why-do-i-get-an-object-is-not-iterable-error
