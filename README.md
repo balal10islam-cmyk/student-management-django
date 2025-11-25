@@ -120,7 +120,6 @@ pip install -r requirements.txt
 pip uninstall requests urllib3
 pip install requests urllib3
 
-
 এটি requests এবং urllib3 উভয় প্যাকেজকে সঠিকভাবে ইনস্টল করবে।
 
 6. six প্যাকেজ ইনস্টল করুন:
