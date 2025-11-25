@@ -87,26 +87,25 @@ Images are from [Unsplash](https://unsplash.com)
 
 প্রথমে, গিটহাব থেকে প্রোজেক্ট ক্লোন করতে হবে। যেভাবে ক্লোন করতে হবে:
 
-git clone https://github.com/balal10islam-cmyk/student-management-django.git
-
-2. ভার্চুয়াল এনভায়রনমেন্ট সেটআপ করা
-
-ডাউনলোড করার পর, প্রোজেক্ট ফোল্ডারে গিয়ে ভার্চুয়াল এনভায়রনমেন্ট তৈরি করতে হবে:
-
-cd student-management-using-django
-
+ git clone https://github.com/balal10islam-cmyk/student-management-django.git
 
 3. ভার্চুয়াল এনভায়রনমেন্ট একটিভেট করা
 4. python -m venv venv
 
 এবার ভার্চুয়াল এনভায়রনমেন্টটিকে একটিভেট করতে হবে। উইন্ডোজে:
 
-venv\Scripts\activate
+source venv/Scripts/activate
 
 
 লিনাক্স বা ম্যাকOS এ:
 
 source venv/bin/activate
+
+2. ভার্চুয়াল এনভায়রনমেন্ট সেটআপ করা
+
+ডাউনলোড করার পর, প্রোজেক্ট ফোল্ডারে গিয়ে ভার্চুয়াল এনভায়রনমেন্ট তৈরি করতে হবে:
+
+cd student-management-django
 
 4. প্রোজেক্টের ডিপেনডেন্সি ইনস্টল করা
 
@@ -114,19 +113,38 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-5. ডাটাবেস মাইগ্রেশন করা
+5. requests এবং urllib3 পুনরায় ইনস্টল করুন:
+
+আপনার ভার্চুয়াল এনভায়রনমেন্টে এই প্যাকেজগুলো পুনরায় ইনস্টল করতে হবে:
+
+pip uninstall requests urllib3
+pip install requests urllib3
+
+
+এটি requests এবং urllib3 উভয় প্যাকেজকে সঠিকভাবে ইনস্টল করবে।
+
+6. six প্যাকেজ ইনস্টল করুন:
+
+যদি six প্যাকেজ ইনস্টল না থাকে, তবে এটি ইনস্টল করতে হবে:
+
+pip install six
+
+
+six প্যাকেজটি Python 2 এবং 3 এর মধ্যে সঙ্গতিপূর্ণ কোড লেখার জন্য ব্যবহৃত হয়, এবং এটি urllib3 এর অংশ হিসাবে ব্যবহৃত হয়।
+
+7. ডাটাবেস মাইগ্রেশন করা
 
 এখন ডাটাবেস মাইগ্রেট করতে হবে:
 
 python manage.py migrate
 
-6. সুপারইউজার তৈরি করা (যদি দরকার হয়)
+8. সুপারইউজার তৈরি করা (যদি দরকার হয়)
 
 অথবা যদি অ্যাডমিন প্যানেল ব্যবহার করতে চান, তাহলে সুপারইউজার তৈরি করতে হবে:
 
 python manage.py createsuperuser
 
-7. সার্ভার চালানো
+9. সার্ভার চালানো
 
 সব কিছু ঠিকভাবে সেটআপ হয়ে গেলে, এখন প্রোজেক্টটি রান করতে হবে:
 
